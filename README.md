@@ -1,4 +1,4 @@
-Overview
+Overview:
 
 This repository contains python script that uses machine learning to train and evaluate a logisitc regression model evaluating loan risk. The goal of the analysis is to develop and train a model that predicts high-risk loans as part of an assessment of borrowers' creditworthiness. 
 
@@ -7,7 +7,9 @@ The dataset used to complete the analysis contains datapoints on loan size, inte
 When building the model, 75% of the data was allocated to training while 25% was split for model testing. Due to different numerical ranges in the dataset, the data was scaled using StandardScaler from SKLearn. Using SKLearn, a logistic regression model was created, trained, and tested. After running this first model, a second model was created following the application of Imbalanced-Learn's RandomOverSampler module to rebalance the sampling (underlying data is imbalanced). This second model was then trained and tested.
 
 
-Results
+Results:
+
+
 First Model (Before Sampling Rebalance): Balanced accuracy of 93.2%. Class precision, recall, f1-score, and support metrics below along with explanation.
 
 
@@ -28,5 +30,7 @@ Second Model (Post Sampling Rebalance): Balanced accuracy of 93.8%. Class precis
 
 
 
+
 Summary:
+
 The second model exhibited a higher level of performance and notably improved the model's performance in correctly identifying high-risk loans, which is key to our analysis. 
